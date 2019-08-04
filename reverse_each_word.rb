@@ -1,6 +1,10 @@
-def reverse_each_word(sentence)
-  words_array = sentence.split(" ")
-  new_array = []
-  new_array = words_array.collect {|word| word.reverse }
-  new_array.join(" ")
+def reverse_each_word(sentence1)
+  array_sentence1 = sentence1.split(" ")
+
+  array_sentence1.each do |words|
+    puts "#{array_sentence1.reverse}"
+  end
 end
+
+reverse_each_word("Hi, how are you?")
+ 
